@@ -1,0 +1,180 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f3e8ff;
+    transition: background-color 0.3s ease;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #6a0dad; /* Deep Purple */
+    padding: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6347; /* Bright Orange */
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 4em 2em;
+    background: linear-gradient(45deg, #6a0dad, #ff6347); /* Gradient */
+    color: white;
+    animation: fadeInDown 1s ease;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+}
+
+header p {
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+/* Sections */
+section {
+    padding: 2em;
+    max-width: 800px;
+    margin: auto;
+    background-color: white;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease;
+    transition: transform 0.3s;
+}
+
+section h2 {
+    font-size: 2em;
+    color: #6a0dad; /* Deep Purple */
+    margin-bottom: 0.5em;
+}
+
+section:hover {
+    transform: scale(1.01);
+}
+
+#skills ul {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    animation: fadeInUp 1s ease;
+}
+
+#skills li {
+    background-color: #6a0dad; /* Deep Purple */
+    color: white;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+#skills li:hover {
+    transform: scale(1.1);
+    background-color: #ff6347; /* Bright Orange */
+}
+
+#skills i {
+    font-size: 1.2em;
+    color: white;
+}
+
+/* Project Styling */
+.project {
+    margin-bottom: 1em;
+    transition: background-color 0.3s;
+}
+
+.project h3 {
+    color: #333;
+}
+
+.project p {
+    color: #666;
+    font-size: 0.95em;
+}
+
+.project:hover {
+    background-color: #fffbf0;
+    border-radius: 5px;
+    padding: 0.5em;
+}
+
+/* Contact */
+#contact {
+    text-align: center;
+    padding: 2em;
+    background-color: #6a0dad; /* Deep Purple */
+    color: white;
+}
+
+#contact a {
+    color: #ff6347; /* Bright Orange */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact a:hover {
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #333;
+    color: white;
+    font-size: 0.9em;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
